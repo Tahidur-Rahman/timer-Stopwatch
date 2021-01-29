@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Timer & Stopwatch </title>
+    <title> Timer </title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  
+    <div class="timer">
+        <h2>Timer</h2>
+        <h4 class="timerHeading">Set your timer for
+            
+                <form class="setTimer">
+                    <input type="number" placeholder="Hour" class="setHour" min="0" max="24"/>
+                <input type="number" placeholder="Min" min ="0" max="60" class="setMin"/>
+                <input type="number" placeholder="Sec" min="0" max="60" class="setSec"/>
+                <button type="submit">Set</button>
+                </form>
+        </h4>
+
+        <h3 class="showTimer">
+            <span class="hour time">00</span>:
+            <span class="min time">00</span>:
+            <span class="sec time">00</span>
+        </h3>
+
+        <div class="btn-group">
+            <button class="start">Start</button>
+        <button class="reset">Reset</button>
+        </div>
 
 
 
 
-    <script src="main.js"></script>
+        <script src="main.js"></script>
 </body>
+
 </html>
